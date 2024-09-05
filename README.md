@@ -1,3 +1,5 @@
 # MakerBot Mini
 
-Please find the project report in the repo.
+To be updated.
+
+You can simply find a report in this repo.
