@@ -43,5 +43,6 @@ Run the Python script to read the camera feed from ESP32: Connect to the WIFI ne
 cd client/read_esp32_cam/
 pip install -r requirements.txt
 python read_cam.py
+```
 
 ![](images/keyboard_control_with_cam.png)
