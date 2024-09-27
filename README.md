@@ -46,3 +46,44 @@ python read_cam.py
 ```
 
 ![](images/keyboard_control_with_cam.png)
+
+### 4. Keyboard Control Example
+Set up the Python environment from the file client/keyboard_control/requirements.txt by typing pip install -r requirements.txt.
+
+Run the keyboard control example for VIABot:
+```bash
+Copy code
+cd client/keyboard_control/
+pip install -r requirements.txt
+python keyboard_control.py
+```
+
+![](images/keyboard_control.png)
+
+A control window like the one above will appear. Use the arrow keys to test controlling the motors of the VIABot.
+
+** Controlling the bot while viewing the ESP32-CAM feed: **
+```bash
+cd client/keyboard_control/
+pip install -r requirements.txt
+python keyboard_control_with_cam.py
+```
+![](images/keyboard_control_with_cam.png)
+
+### 5. Self-Driving Example Following Lane Lines
+Set up lane markings for VIABot as shown in the image:
+
+![](images/car_setup.png)
+
+![](images/car_setup_2.png)
+
+Open a terminal in the `folder client/auto_drive` and run the following example:
+```bash
+python drive.py
+```
+
+Windows showing image analysis will appear upon successful connection with the ESP32-CAM.
+
+![](images/lane_line_detection.png)
+
+Adjust the camera angle to see the lane markings. It’s best to position the camera 15-20 cm above ground, slightly tilted downwards to get the optimal viewing angle. Then adjust the parameters and algorithms in the `calculate_control_signal()` function in the file `client/auto_drive/controller.py`.
